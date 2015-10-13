@@ -7,11 +7,10 @@
 
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
 
-nav {
+nav {    
     position: absolute;
     margin-left: 15px;
-    background-color:#181C22;
-    font-size:16px;
+    font-size:16px;    
 }
 svg {
         height:1em;
@@ -60,14 +59,20 @@ header2 {
 }
 
 
+@media screen and (max-width: 768px ) {
+    nav{ 
+        background-color: #181C22;
+    }
+}
 
 @media screen and (min-width: 768px ) {
     nav{
         background-color:rgba(24, 28, 34, 0.8);
     }
+
     #container1 {
-        background-image: url("/img/background-sm.jpg");
-        
+        background-image: url("/img/background-sm.jpg");    
+          
     }
 
     li {
@@ -89,7 +94,7 @@ header2 {
         font-size:4em;
     }
 
-    body{
+    #container1{
         background-image: url("/img/background-md.jpg");
     }
 
@@ -98,7 +103,7 @@ header2 {
 
 
 @media screen and (min-width: 1200px ) {
-    body {
+    #container1 {
         background-image:url("/img/background-lg.jpg");
     }
 }
