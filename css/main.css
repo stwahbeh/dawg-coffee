@@ -1,18 +1,18 @@
 
 
-@import https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css;
-@import https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css;
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,400,400italic,300);
 
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
 
 
 
 nav {    
     position: static;
-    margin-left: 15px;
-    font-size:16px;    
+    
+    font-size:16px;  
 }
 
 svg {
@@ -22,14 +22,22 @@ svg {
 
 body {
     background-color: #E9EAEE;
+    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300; 
 }
 
+ul {
+    margin:0px;
+    padding-left:0px;
+}
 
 li {
-    display: inline;    
+    display: inline;  
+    padding-left:15px;  
 }
 
-a {
+#nav a {
   font-variant: small-caps;
   text-decoration: none;  
   padding:.5em;
@@ -38,13 +46,10 @@ a {
 
 a:hover {
     color:#D87E28;
+    text-decoration: none; 
 }
 
-p {
-    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 300;    
-}
+
 
 #exquisite {
     font-style:italic;
@@ -58,12 +63,20 @@ p {
     color:white;
 }
 
-header {
+h1,h2,h3,h4,h5,h6 {
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
-    pading-top:3em;    
+        
 }
 
-header2 {
+h2{
+    color:#BC6026;
+}
+
+#heading {
+    pading-top:3em;
+}
+
+.header2 {
     color:#BC6026;
 }
 
@@ -73,10 +86,11 @@ header2 {
 
 #map {
     border-radius: 5px;
+
 }
 
 .information {
-    height:2em;
+    height:1.5em;
     fill:#D87E28;
     display:block;
     margin:auto;
@@ -85,7 +99,7 @@ header2 {
 
 .information-p {
     text-align:center;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .informationSVG{
@@ -93,6 +107,42 @@ header2 {
     margin:auto;
 }
 
+#info {
+    background-color:#dbdce3;
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+
+    .map {
+      text-align:center;  
+
+    }
+
+    dd {
+        font-style:italic;
+        padding-left:1em;
+    }
+
+#ourStory{
+    background-color: #dbdce3;
+    margin:0px;
+    width:100%;
+}
+
+#story {
+    float:right;
+    max-height:300px;
+    border-radius:5px;
+    padding:1em;
+
+}
+
+    footer {
+        border-style: solid;
+        border-top: 3px;
+        border-color: #D87E28;
+         
+    }
 
 @media screen and (max-width: 768px ) {
     nav{ 
@@ -106,10 +156,22 @@ header2 {
 
     }
 
-}
+    .menu {
+        text-align:left;
+    }
 
-#map {
-    margin:auto;
+    #map {
+        padding-bottom:1em;
+    }
+
+    footer {
+        margin:0;
+        width:100%;
+        color:#afb3c2;
+    }
+
+  
+
 }
 
 
@@ -118,11 +180,22 @@ header2 {
         background-color:rgba(24, 28, 34, 0.8);
     }
 
+    body {
+        font-size:20px;
+    }
+
+    h2 {
+        
+        text-align:center;
+    }
+
     #container1 {
         background-image: url(../img/background-sm.jpg); 
         min-height: 550px;
         background-size: cover;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;
+        margin:0px;  
+        width:100%;
     }    
 
     li {
@@ -130,29 +203,39 @@ header2 {
         padding-right:1em;
     }
 
-    header2 {
-        text-align: center;
-        padding-bottom:1em;
+
+    #exquisite{
+        font-size:1.25em;          
     }
 
-
-    #logo {
+        #logo {
         height:1.5em;
-        padding-bottom:.25em;
+        padding-bottom:1em;
         fill:#D87E28;
         display: block;
         margin:auto;
 
     }
 
-    #exquisite{
-        font-size:1.25em;          
-    }
-
     #headline{
         padding-top: 3em;
         padding-bottom:3em;
-    }   
+    } 
+
+    #story{
+        height:400px;
+    }
+
+        #map {
+        padding-bottom:1em;
+    }
+
+
+
+
+
+
+
 
 }
 
