@@ -8,7 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
 
 nav {    
-    position: absolute;
+    position: static;
     margin-left: 15px;
     font-size:16px;    
 }
@@ -43,6 +43,12 @@ p {
     font-weight: 300;    
 }
 
+#headline {
+    font-style:italic;
+    text-align:center;
+
+}
+
 #container1 {
     text-align: right;
     padding-right:3em;
@@ -58,11 +64,26 @@ header2 {
     color:#BC6026;
 }
 
+#information {
+    background-color:#dbdce3; 
+}
+
+#map {
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 768px ) {
     nav{ 
         background-color: #181C22;
     }
+    #motto {
+        display:none;
+    }
+    #logo {
+        display:none;
+    }
+
 }
 
 @media screen and (min-width: 768px ) {
@@ -70,8 +91,10 @@ header2 {
         background-color:rgba(24, 28, 34, 0.8);
     }
 
-    #container1 {
-        background-image: url("/img/background-sm.jpg");    
+    body {
+        background-image: url(../img/background-sm.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;   
           
     }
 
@@ -85,6 +108,19 @@ header2 {
         padding-bottom:1em;
     }
 
+    .headline{
+        font-size:1.25em;
+        padding-bottom:3em;
+
+    }
+
+    #logo {
+        height:1.5em;
+        padding-bottom:1em;
+        padding-top:3em;
+        
+    }
+
 }
 
 
@@ -94,8 +130,8 @@ header2 {
         font-size:4em;
     }
 
-    #container1{
-        background-image: url("/img/background-md.jpg");
+    body{
+        background-image: url(../img/background-md.jpg);
     }
 
 }
@@ -103,8 +139,8 @@ header2 {
 
 
 @media screen and (min-width: 1200px ) {
-    #container1 {
-        background-image:url("/img/background-lg.jpg");
+    body {
+        background-image:url(../img/background-lg.jpg);
     }
 }
 
