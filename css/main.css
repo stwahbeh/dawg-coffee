@@ -139,10 +139,15 @@ h2{
 
     footer {
         border-style: solid;
-        border-top: 3px;
         border-color: #D87E28;
-         
+        background-color: #afb3c2;
+        font-size:12px;
+        border-bottom:3px;
+        border-left:3px;
+        border-right:3px;         
     }
+
+    
 
 @media screen and (max-width: 768px ) {
     nav{ 
@@ -164,13 +169,7 @@ h2{
         padding-bottom:1em;
     }
 
-    footer {
-        margin:0;
-        width:100%;
-        color:#afb3c2;
-    }
-
-  
+ 
 
 }
 
