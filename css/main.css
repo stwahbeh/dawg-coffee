@@ -72,8 +72,10 @@ h2{
     color:#BC6026;
 }
 
-#heading {
+.heading {
     pading-top:3em;
+    margin:none;
+    border:none;
 }
 
 .header2 {
@@ -144,7 +146,8 @@ h2{
         font-size:12px;
         border-bottom:3px;
         border-left:3px;
-        border-right:3px;         
+        border-right:3px;  
+        clear: both;       
     }
 
     
@@ -153,12 +156,27 @@ h2{
     nav{ 
         background-color: #181C22;
     }
+
+    #equisite {
+        text-align:left;
+
+    }
+    
+    .heading {
+        text-align:left;
+        color:#333;
+
+    }
     #motto {
         display:none;
     }
     #logo {
         display:none;
 
+    }
+
+    .dissapears {
+        display:none;
     }
 
     .menu {
@@ -188,6 +206,8 @@ h2{
         text-align:center;
     }
 
+
+
     #container1 {
         background-image: url(../img/background-sm.jpg); 
         min-height: 550px;
@@ -208,7 +228,7 @@ h2{
     }
 
         #logo {
-        height:1.5em;
+        height:3em;
         padding-bottom:1em;
         fill:#D87E28;
         display: block;
@@ -227,6 +247,15 @@ h2{
 
         #map {
         padding-bottom:1em;
+    }
+
+    #coming {
+        font-size: 1em;
+        padding-top:.5em;
+    }
+
+    #coming {
+        padding-left:1em;
     }
 
 
